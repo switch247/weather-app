@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scroll</title>
+  </head>
+  <body>
+    <div class="test">
+      <div
+        class="cont"
+        style="
+          position: relative;
+          overflow: hidden;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 50px;
+        "
+      >
+        <button
+          style="position: absolute; top: 50%; left: 5%; z-index: 3"
+          onclick="lefts()"
+        >
+          left
+        </button>
+        <button
+          style="position: absolute; top: 50%; right: 5%; z-index: 3"
+          onclick="rights()"
+        >
+          right
+        </button>
+
+        <div
+          class="container"
+          style="
+            position: relative;
+            background-color: rgb(180, 165, 165);
+            display: flex;
+            overflow: hidden;
+            scroll-behavior: smooth;
+            width: 100%;
+          "
+        >
+          <div
+            class="card"
+            style="
+              background-color: red;
+              height: 500px;
+              width: 500px;
+              margin: 20px;
+              min-width: 100%;
+            "
+          >
+            test
+          </div>
+          <div
+            class="card"
+            style="
+              background-color: red;
+              height: 500px;
+              width: 500px;
+              margin: 20px;
+            "
+          >
+            test
+          </div>
+          <div
+            class="card"
+            style="
+              background-color: red;
+              height: 500px;
+              width: 500px;
+              margin: 20px;
+            "
+          >
+            test
+          </div>
+          <div
+            class="card"
+            style="
+              background-color: red;
+              height: 500px;
+              width: 500px;
+              margin: 20px;
+            "
+          >
+            test
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function lefts() {
+        let z = document.querySelector(".container");
+        z.scrollBy(-350, 0);
+        console.log("left");
+      }
+      function rights() {
+        let z = document.querySelector(".container");
+        z.scrollBy(350, 0);
+        console.log("right");
+      }
+    </script>
+  </body>
+</html>

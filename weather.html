@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="download.png" type="image/x-icon" />
+    <title>weather</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <!-- defer makes it run at the end -->
+  </head>
+  <body>
+    <div class="test">
+      <div class="weather-card">
+        <div class="search">
+          <input type="text" class="search-bar" placeholder="search" />
+          <button>
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 16 16"
+              height="1.5em"
+              width="1.5em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="weather loading">
+          <h2 class="city">Addis Ababa</h2>
+          <h1 class="temprature">51° C</h1>
+          <div class="icon-description">
+            <img
+              src="https://openweathermap.org/img/wn/02d.png"
+              alt=""
+              class="icon"
+            />
+            <div class="description">cloudy</div>
+          </div>
+          <div class="humidity">60 %</div>
+          <div class="wind">wind speed: 5 km/hr</div>
+        </div>
+      </div>
+    </div>
+    <div class="testt">
+      <div class="multiple">
+        <svg
+          class="btn-right"
+          onclick="rights()"
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 1024 1024"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm154.7 454.5l-246 178c-5.3 3.8-12.7 0-12.7-6.5v-46.9c0-10.2 4.9-19.9 13.2-25.9L566.6 512 421.2 406.8c-8.3-6-13.2-15.6-13.2-25.9V334c0-6.5 7.4-10.3 12.7-6.5l246 178c4.4 3.2 4.4 9.8 0 13z"
+          ></path>
+        </svg>
+
+        <svg
+          class="btn-left"
+          onclick="lefts()"
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 1024 1024"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm104 316.9c0 10.2-4.9 19.9-13.2 25.9L457.4 512l145.4 105.2c8.3 6 13.2 15.6 13.2 25.9V690c0 6.5-7.4 10.3-12.7 6.5l-246-178a7.95 7.95 0 0 1 0-12.9l246-178a8 8 0 0 1 12.7 6.5v46.8z"
+          ></path>
+        </svg>
+
+        <div class="weathers-container">
+          <div class="weather-card 1">
+            <div class="weather1 loading">
+              <h2 class="city1">Addis Ababa</h2>
+              <h1 class="temprature1">51° C</h1>
+              <div class="icon-description1">
+                <img
+                  src="https://openweathermap.org/img/wn/02d.png"
+                  alt=""
+                  class="icon1"
+                />
+                <div class="description1">cloudy</div>
+              </div>
+              <div class="humidity1">60 %</div>
+              <div class="wind1">wind speed: 5 km/hr</div>
+            </div>
+          </div>
+          <div class="weather-card 2">
+            <div class="weather2 loading">
+              <h2 class="city2">Addis Ababa</h2>
+              <h1 class="temprature2">51° C</h1>
+              <div class="icon-description2">
+                <img
+                  src="https://openweathermap.org/img/wn/02d.png"
+                  alt=""
+                  class="icon2"
+                />
+                <div class="description2">cloudy</div>
+              </div>
+              <div class="humidity2">60 %</div>
+              <div class="wind2">wind speed: 5 km/hr</div>
+            </div>
+          </div>
+          <div class="weather-card 3">
+            <div class="weather3 loading">
+              <h2 class="city3">Addis Ababa</h2>
+              <h1 class="temprature3">51° C</h1>
+              <div class="icon-description3">
+                <img
+                  src="https://openweathermap.org/img/wn/02d.png"
+                  alt=""
+                  class="icon3"
+                />
+                <div class="description3">cloudy</div>
+              </div>
+              <div class="humidity3">60 %</div>
+              <div class="wind3">wind speed: 5 km/hr</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+  </body>
+</html>
