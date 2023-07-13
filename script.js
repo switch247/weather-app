@@ -1,4 +1,4 @@
-import keys from ./keys.js
+// import keys from ./keys.js
 let weather = {
     apikey: "8aa46341f09c625169029d3dd37c3220",
 fetchweather:function(city){
@@ -9,9 +9,9 @@ fetchweather:function(city){
         +"&units=metric&appid="
         +this.apikey
     )
-    .then((response)=> response.json())
+    .then((response)=> response.json()) 
     .then(
-        (data)=> this.displayweather(data)
+        (data)=>{ this.displayweather(data); console.log(data); }
     )
 },
 
